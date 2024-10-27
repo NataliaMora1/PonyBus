@@ -6,7 +6,6 @@ public class ListaUsuario {
     //crear un arraylist de tipo Usuario
     private ArrayList<Usuario> lista = new ArrayList<>();
 
-    //metodos
     //agregar usuario
     public void agregarUsuario(Usuario nuevoUsuario){
         lista.add(nuevoUsuario);
@@ -16,9 +15,9 @@ public class ListaUsuario {
         lista.remove(eliminarUsuario);
     }
     //mostrar lista
-    public void mostrarUsuario(){
+    public void mostrarUsuarios(){
         for (Usuario usuario : lista) {
-            usuario.mostrarDetalles();
+            usuario.mostrarDatos();
         }
     }
 }
