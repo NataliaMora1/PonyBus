@@ -3,18 +3,18 @@ package Figuras;
 public class Main {
     public static void main(String[] args){
 
-        Cuadrado cuadrado1 = new Cuadrado(0, 0, 6);
-        Circulo circulo1 = new Circulo(0, 0, 3);
-        Triangulo triangulo1 = new Triangulo(0, 0,6, 3,4);
+        Ubicacion ubicacion1 = new Ubicacion(0,0);
+        Ubicacion ubicacion2 = new Ubicacion(1,2);
 
-        cuadrado1.calcularCoordenada();
-        cuadrado1.calcularCuadrado();
+        //Figura figura = new Figura(true, ubicacion1);
 
-        circulo1.calcularCoordenada();
-        circulo1.calcularCirculo();
+        Cuadrado cuadrado1 = new Cuadrado(3);
+        cuadrado1.mostrarUbicacion();
 
-        triangulo1.calcularCoordenada();
-        triangulo1.calcularTriangulo();
+        cuadrado1.moverFigura(ubicacion2);
+        cuadrado1.mostrarUbicacion();
+        
+        System.out.println("Area: " + cuadrado1.calcularArea());
 
     }
 }

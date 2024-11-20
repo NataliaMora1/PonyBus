@@ -10,7 +10,7 @@ public class Main{
         Ruta rutaA = new Ruta(1, "Ruta Centro", "10:00", "11:00");
         Ruta rutaB = new Ruta(2, "Ruta Sur", "12:00", "1:00");
 
-        //crear objeto de la clase ListaUsuario
+        //crear objeto de la clase ListaUsuario y ListaRuta
         ListaUsuario lista1 = new ListaUsuario();
 
         ListaRuta lista2 = new ListaRuta();

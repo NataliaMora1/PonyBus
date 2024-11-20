@@ -11,7 +11,6 @@ public class Usuario{
         this.id_Estudiante = id_Estudiante;
         this.tipo_De_Usuario = tipo_De_Usuario;
         this.saldo = saldo;
-
     }
     public void mostrarDatos(){
         System.out.println("Nombre: " + nombre);
