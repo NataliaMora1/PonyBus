@@ -12,7 +12,6 @@ public class Ruta {
         this.horaInicio = horaInicio;
         this.horaFin = horaFin;
     }
-
     public void mostrarDatosRutas(){
         System.out.println("Id de ruta: " + id_Ruta);
         System.out.println("Nombre: " + nombre);
