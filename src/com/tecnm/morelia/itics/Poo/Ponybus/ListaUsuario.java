@@ -3,12 +3,7 @@ import java.util.ArrayList;
 
 public class ListaUsuario {
 
-    //crear un arraylist de tipo Usuario
-    private ArrayList<Usuario> lista = new ArrayList<>();
-
-    //agregar usuario
-    public void agregarUsuario(Usuario nuevoUsuario){
-        lista.add(nuevoUsuario);
+    /;
     }
     //eliminar usuario
     public void eliminarUsuario(Usuario eliminarUsuario){
