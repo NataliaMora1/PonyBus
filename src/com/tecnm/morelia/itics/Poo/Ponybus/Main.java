@@ -1,5 +1,4 @@
 package com.tecnm.morelia.itics.Poo.Ponybus;
-
 public class Main{
     public static void main(String[] args){
 
