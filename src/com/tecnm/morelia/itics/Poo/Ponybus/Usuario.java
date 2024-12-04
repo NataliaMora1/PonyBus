@@ -6,13 +6,7 @@ public class Usuario{
     private String tipo_De_Usuario;
     private int saldo;
 
-    public Usuario(String nombre, int id_Estudiante, String tipo_De_Usuario, int saldo){
-        this.nombre = nombre;
-        this.id_Estudiante = id_Estudiante;
-        this.tipo_De_Usuario = tipo_De_Usuario;
-        this.saldo = saldo;
-
-    }
+    
     public void mostrarDatos(){
         System.out.println("Nombre: " + nombre);
         System.out.println("Id del estudiante: " + id_Estudiante);
