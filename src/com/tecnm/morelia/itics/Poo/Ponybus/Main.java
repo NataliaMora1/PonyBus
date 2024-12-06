@@ -1,30 +1,52 @@
 package com.tecnm.morelia.itics.Poo.Ponybus;
 
-public class Main{
-    public static void main(String[] args){
+public class Main {
+    public static void main(String[] args) {
 
         //crear objetos de la clase Usuario
-        Usuario persona1 = new Usuario("Natalia",23120576,"Alumna",100);
-        Usuario persona2 = new Usuario("Martha",23120646,"Alumna",0);
+        Usuario persona1 = new Usuario("Natalia", 23120576, "Alumna", 100);
+        Usuario persona2 = new Usuario("Martha", 23120646, "Alumna", 0);
+        Usuario persona3 = new Usuario("Monse", 231206434, "Alumna", 30);
+        Usuario persona4 = new Usuario("Juan", 231254834, "Alumno", 15);
 
-        Ruta rutaA = new Ruta(1, "Ruta Centro", "10:00", "11:00");
-        Ruta rutaB = new Ruta(2, "Ruta Sur", "12:00", "1:00");
+        //crear objetos de la clase Ruta
+        Ruta rutaA = new Ruta(1, "Ruta Centro", 9);
+        Ruta rutaB = new Ruta(2, "Ruta Sur", 10);
+        Ruta rutaC = new Ruta(3, "Ruta Norte", 11);
+        Ruta rutaD = new Ruta(4, "Ruta Oeste", 12);
 
-        //crear objeto de la clase ListaUsuario y ListaRuta
-        ListaUsuario lista1 = new ListaUsuario();
+        //crear objetos de las listas
+        Transporte listaUsuario = new Transporte();
+        Conductor listaRuta = new Conductor();
 
-        ListaRuta lista2 = new ListaRuta();
+        //agregar Usuarios
+        listaUsuario.capacidad(persona1, true);
+        listaUsuario.capacidad(persona2, true);
+        listaUsuario.capacidad(persona3, true);
 
-        //llamar el metodo agregarUsuario
-        lista1.agregarUsuario(persona1);
-        lista1.agregarUsuario(persona2);
+        //usuario repetido
+        listaUsuario.capacidad(persona2, true);
 
-        lista2.agregarRuta(rutaA);
-        lista2.agregarRuta(rutaB);
+        //eliminar usuario
+        listaUsuario.capacidad(persona3, false);
+        listaUsuario.capacidad(persona4, false);
 
-        //mostrar lista
-        lista1.mostrarUsuarios();
-        lista2.mostrarRutas();
+        //mostrar Usuarios
+        listaUsuario.mostrarUsuarios();
 
+        //agregar Rutas
+        listaRuta.asignarRuta(rutaA, true);
+        listaRuta.asignarRuta(rutaB, true);
+        listaRuta.asignarRuta(rutaC, true);
+
+        //ruta en servicio(repetida)
+        listaRuta.asignarRuta(rutaB, true);
+
+        //eliminar ruta
+        listaRuta.asignarRuta(rutaC, false);
+        listaRuta.asignarRuta(rutaD, false);
+
+        //mostrar Rutas
+        listaRuta.mostrarRutas();
     }
 }
